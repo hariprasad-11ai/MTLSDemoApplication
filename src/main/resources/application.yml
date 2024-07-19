@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: MTLSDemo
+
+server:
+    port: 8443
+    ssl:
+      key-store: classpath:server-keystore.jks
+      key-store-password: password
+      key-password: password
+      trust-store: classpath:server-truststore.jks
+      trust-store-password: password
+      client-auth: need
